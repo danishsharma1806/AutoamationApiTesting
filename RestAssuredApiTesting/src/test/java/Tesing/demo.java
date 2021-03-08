@@ -9,7 +9,7 @@ public class demo
 	public static void main(String sd[]) throws IOException
 	{
 		Properties property=new Properties();
-		FileInputStream fs=new FileInputStream(".src/test/resources/Links.properties");
+		FileInputStream fs=new FileInputStream("F:\\OCA\\RestAssuredApiTesting\\src\\test\\resources\\Links.properties");
 		property.load(fs);
 		System.out.println(property.getProperty("url"));
 	}
