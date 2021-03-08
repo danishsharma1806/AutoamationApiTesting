@@ -4,13 +4,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class demo 
+public class CallingUrl 
 {
-	public static void main(String sd[]) throws IOException
+	public static String url() throws IOException
 	{
 		Properties property=new Properties();
 		FileInputStream fs=new FileInputStream(".src/test/resources/Links.properties");
 		property.load(fs);
-		System.out.println(property.getProperty("url"));
+		String baseurl=property.getProperty("url");
+		return baseurl;
 	}
 }
